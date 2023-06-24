@@ -1,5 +1,11 @@
 # ANSYS UIDL二次开发-高级程序部署方式
 
+<a href="https://kennyangel.github.io/">
+
+<h5 style="color:Aquamarine; font-size:14px">作者：Kenny Chu | 主页：https://kennyangel.github.io/ | 更新时间：2023-06-24</h5>
+
+</a>
+
 背景介绍：部分开发程序案例直接在Ansys原生的 GRN 文件中进行二次开发，该方式对于多个项目的管理具有不便性，因而本文介绍一种更合理的UIDL程序部署，可针对不同项目进行独立部署。
 
 ----

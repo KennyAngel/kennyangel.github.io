@@ -1,5 +1,11 @@
 # ANSYS UIDL二次开发-基础
 
+<a href="https://kennyangel.github.io/">
+
+<h5 style="color:Aquamarine; font-size:14px">作者：Kenny Chu | 主页：https://kennyangel.github.io/ | 更新时间：2023-06-24</h5>
+
+</a>
+
 UIDL：Ansys User Interface Design Language
 
 ----
@@ -11,6 +17,8 @@ UIDL：Ansys User Interface Design Language
 ## [1、文件结构](#ANSYS UIDL二次开发-基础)
 
 <img src="cache\ANSYS_UIDL_1.png" alt="ANSYS UIDL 程序结构" style="zoom:60%;" />
+
+> 上图链接暂时找不到了，如有作者发现，请@本人添加引用链接
 
 ## [2、程序解析](#ANSYS UIDL二次开发-基础)
 
