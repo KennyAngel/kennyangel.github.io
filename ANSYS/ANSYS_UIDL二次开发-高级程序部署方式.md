@@ -8,7 +8,7 @@
 
 ----
 
-## 1、[文件结构](#ANSYS UIDL二次开发-高级程序部署方式)
+## [1、文件结构](#ANSYS UIDL二次开发-高级程序部署方式)
 
 文件结构案例：
 
@@ -39,7 +39,7 @@ Project Files
 
 
 
-## 2、[程序解析](#ANSYS UIDL二次开发)
+## [2、程序解析](#ANSYS UIDL二次开发)
 
 ```tcl
 :! 来自文件"menulist.ans"
