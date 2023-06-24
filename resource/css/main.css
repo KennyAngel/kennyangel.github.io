@@ -17,10 +17,14 @@ html {
 
 html {
     font-size: 14px;
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
     color: var(--text-color);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-image: url(../img/terraria_1.jpg);
+    background-repeat:no-repeat; 
+    background-attachment: fixed;
+    background-size:100% 100%; 
 }
 
 body {
@@ -31,7 +35,11 @@ body {
     font-size: 1rem;
     line-height: 1.42857;
     overflow-x: hidden;
-    background: inherit;
+    /* background: inherit; */
+    background-image: url(../img/terraria_1.jpg);
+    background-repeat:no-repeat; 
+    background-attachment: fixed;
+    background-size:100% 100%; 
     tab-size: 4;
 }
 
@@ -1525,7 +1533,8 @@ tt {
 
 :root {
 
-    --bg-color: #272729;
+    /* --bg-color: #272729; */
+    --bg-color: rgba(255,255,100)
     --text-color: #cccccc;
     --blur-text-color: #818286;
     --side-bar-bg-color: #232325;
