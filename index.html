@@ -7,19 +7,33 @@
   <title>Kenny_Angel's Blog</title>
   <link rel="stylesheet" type="text/css" href="resource/css/mint-dark.css">
   <link rel="stylesheet" type="text/css" href="resource/css/main.css">
+  <link rel="stylesheet" type="text/css" href="resource/css/main_add.css">
   <!-- <link rel="stylesheet" href="resource/assets/bootstrap/css/bootstrap.min.css"> -->
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
     <link rel="stylesheet" href="resource/assets/fonts/font-awesome.min.css"> -->
-    <link rel="icon" type ="image/x-icon" href="resource/img/kenny_5.ico">
+  <link rel="icon" type="image/x-icon" href="resource/img/kenny_5.ico">
 </head>
 
 <body>
 
-  <div id="mainDiv" class='megamenu-content' style="width: 50%; background-color: #272729; margin-left: 25%;">
+  <nav class="navigation">
+    <div class="nav_dock_left content_left_center" id="ID_nav_left">
+      <p ><img src="resource\img\kenny_5.ico" referrerpolicy="no-referrer" height="80px"></p>
+      <a class="nav_link" href="#page-top" id="ID_nav_name">Kenny_ANGEL'S BLOG</a>
+    </div>
+    <div class="nav_dock_right content_right_center">
+      <a class="nav_link" href=".\index.html">Home</a>
+      <a class="nav_link" href=".\about.html">About</a>
+      <a class="nav_link" href=".\contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div id="header" class='megamenu-content'
+    style="width: 50%; background-color: #272729; margin-left: 25%; padding-top: 100px; ">
     <div id='write' class='megamenu-content' style="width: 100%;">
       <h1 style="color:Bisque ">Kenny_Angel's Blog</h1>
-      <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">计数功能</script>
+      <!-- <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">计数功能</script> -->
       <h3><span>Hi there 👋 欢迎来到我的个人页面✨</span></h3>
       <p><span>· 🏄‍♂️ 当前站点: </span><a href='https://kennyangel.github.io/' target='_blank'
           class='url'>https://kennyangel.github.io/</a></p>
@@ -34,9 +48,10 @@
           class='url'>https://steamcommunity.com/profiles/76561198071342429/</a>
       </p>
       <p><span>· 📫 Email: </span><a href='mailto:569641191@qq.com' target='_blank' class='url'>569641191@qq.com</a></p>
-      <p><span>· 🌏 聊天室: </span><a href='https://app.gitter.im/#/room/#kennyangel:gitter.im' target='_blank' class='url'>问题反馈 | 更多的Ideas 
-        <img src="resource\img\chat_on_gitter.svg" referrerpolicy="no-referrer">
-      </a></p>
+      <p><span>· 🌏 聊天室: </span><a href='https://app.gitter.im/#/room/#kennyangel:gitter.im' target='_blank'
+          class='url'>问题反馈 | 更多的Ideas
+          <img src="resource\img\chat_on_gitter.svg" referrerpolicy="no-referrer">
+        </a></p>
 
       <p><img src="resource\img\sh.jpg" referrerpolicy="no-referrer"></p>
 
@@ -88,35 +103,58 @@
       <p></a></p>
       <p>利用 scipy 实现修正时间硬化蠕变方程的拟合</p>
 
-      <!-- 站点数据统计 -->
-      <hr />
-      <p><span id="busuanzi_container_site_pv"><span> </span></p>
-      <p style="color:CadetBlue; font-size:14px; font-style: italic;">本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
-      </p>
-      <p style="color:CadetBlue; font-size:14px; font-style: italic;">本站访客数 <span id="busuanzi_value_site_uv"></span> 人次
-      </p>
-      <p style="color:CadetBlue; font-size:14px; font-style: italic;">本文总阅读量 <span id="busuanzi_value_page_pv"></span> 次
-      </p>
-      <p></span></p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
+
     </div>
+  </div>
+
+  <div id="footer" class="foot">
+    <div style="width: 30%;">
+    </div>
+    <div style="width: 40%;">
+      <p>Base on Github <a href=""></a> <img src="resource\img\github_banner_1.jpg" referrerpolicy="no-referrer"
+          height="40px"></p>
+    </div>
+    <div style="width: 30%;">
+      <!-- 站点数据统计 -->
+      <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">计数功能</script>
+      <p>
+        <span id="busuanzi_container_site_pv"><span> </span>
+        <span style="color:darkgrey; font-size:10px; ">本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+        </span><br />
+        <span style="color:darkgrey; font-size:10px; ">本站访客数 <span id="busuanzi_value_site_uv"></span> 人次
+        </span><br />
+      </p>
+      
+      <!-- <p></span></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p> -->
+    </div>
+
   </div>
 
   <script TYPE="text/javascript">
 
     var docEl = document.documentElement;
-    var div = document.getElementById("mainDiv");
+    var div_header = document.getElementById("header");
+    var nav_left = document.getElementById("ID_nav_left");
+    var nav_name = document.getElementById("ID_nav_name");
+
+    
     if (docEl.clientWidth < 600) {
-      div.style.width = "100%";
-      div.style.marginLeft = "0%";
+      div_header.style.width = "100%";
+      div_header.style.marginLeft = "0%";
+
+      nav_name.style.display = "none";
+
     }
     else {
-      div.style.width = "50%";
-      div.style.marginLeft = "25%";
+      div_header.style.width = "50%";
+      div_header.style.marginLeft = "25%";
+
+      nav_name.style.display = "flex";
     }
   </script>
 
