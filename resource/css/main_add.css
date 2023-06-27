@@ -1,0 +1,24 @@
+
+.navigation {
+    width: 100%;
+    height: 100px;
+    background-color:#191D24;
+    margin: 0px;
+}
+
+.nav_dock_left{
+    float: left;
+    width: 60%;
+}
+
+.nav_dock_right{
+    float: right;
+    width: 40%;
+    columns: 3;
+}
+
+.nav_link {
+    color:cornsilk;
+    font-size:x-large;
+    margin-right: 1rem;
+}
