@@ -9,9 +9,9 @@
 
   <link rel="stylesheet" type="text/css" href="resource/css/mint-dark.css">
   <link rel="stylesheet" type="text/css" href="resource/css/main.css">
-  <link rel="stylesheet" type="text/css" href="resource/css/main_add_PC.css" media="screen and (min-width:601px)"/>
-  <link rel="stylesheet" type="text/css" href="resource/css/main_add_M.css" media="screen and (max-width:600px)"/>
-  
+  <link rel="stylesheet" type="text/css" href="resource/css/main_add_PC.css" media="screen and (min-width:601px)" />
+  <link rel="stylesheet" type="text/css" href="resource/css/main_add_M.css" media="screen and (max-width:600px)" />
+
 </head>
 
 <body>
@@ -102,7 +102,7 @@
       <h5 style="color:Aquamarine; font-size:20px">· 🧾 Python scipy库实现曲线拟合</h5>
       <p></a></p>
       <p>利用 scipy 实现修正时间硬化蠕变方程的拟合</p>
-      
+
       <p><a href="Python/Python程序打包.html"></p>
       <h5 style="color:Aquamarine; font-size:20px">· 🧾 Python 程序打包</h5>
       <p></a></p>
@@ -112,7 +112,7 @@
     </div>
   </div>
 
-    <!-- 底角信息栏 -->
+  <!-- 底角信息栏 -->
   <div id="footer" class="foot">
     <div style="width: 30%;">
     </div>
@@ -122,17 +122,87 @@
     </div>
     <div style="width: 30%;">
       <!-- 站点数据统计 -->
-      <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">计数功能</script>
+      <!-- <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">计数功能</script> -->
       <p>
         <span id="busuanzi_container_site_pv"><span> </span>
-          <span style="color:darkgrey; font-size:10px; ">本站总访问量 <span id="busuanzi_value_site_pv"></span> 人次
-          </span><br />
-          <span style="color:darkgrey; font-size:10px; ">本站访客数 <span id="busuanzi_value_site_uv"></span> 人
-          </span><br />
+          <span id="busuanzi_value_site_pv" style="color:darkgrey; font-size:10px; "></span>
+          <br />
+          <span id="busuanzi_value_site_uv" style="color:darkgrey; font-size:10px; "></span>
+          <br />
       </p>
     </div>
 
   </div>
+
+<!--更新站点数据统计, 访问量-->
+  <script src="resource/js/statistics.js">计数功能</script>
+  <script>
+    window.onload = function () {
+      // 计数器的代码放在这里
+      // 更新计数器的显示
+      var visitCountElement = document.getElementById("busuanzi_value_site_pv");
+      visitCountElement.innerHTML = "本站总访问量 " + count + " 次";
+    };
+  </script>
+
+<!--更新站点数据统计, 访问人数-->
+  <script type="text/javascript">
+    var caution = false
+    function setCookie(name, value, expires, path, domain, secure) {
+      var curCookie = name + "=" + escape(value) +
+        ((expires) ? ";expires=" + expires.toGMTString() : "") +
+        ((path) ? "; path=" + path : "") +
+        ((domain) ? "; domain=" + domain : "") +
+        ((secure) ? ";secure" : "")
+      if (!caution || (name + "=" + escape(value)).length <= 4000) {
+        document.cookie = curCookie
+      }
+      else if (confirm("Cookie exceeds 4KB and will be cut!")) {
+        document.cookie = curCookie
+      }
+    }
+    function getCookie(name) {
+      var prefix = name + "="
+      var cookieStartIndex = document.cookie.indexOf(prefix)
+      if (cookieStartIndex == -1) {
+        return null
+      }
+      var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+      if (cookieEndIndex == -1) {
+        cookieEndIndex = document.cookie.length
+      }
+      return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+    }
+    function deleteCookie(name, path, domain) {
+      if (getCookie(name)) {
+        document.cookie = name + "=" +
+          ((path) ? "; path=" + path : "") +
+          ((domain) ? "; domain=" + domain : "") +
+          "; expires=Thu, 01-Jan-70 00:00:01 GMT"
+      }
+    }
+    function fixDate(date) {
+      var base = new Date(0)
+      var skew = base.getTime()
+      if (skew > 0) {
+        date.setTime(date.getTime() - skew)
+      }
+    }
+    var now = new Date()
+    fixDate(now)
+    now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
+    var visits = getCookie("counter")
+    if (!visits) {
+      visits = 1;
+    }
+    else {
+      visits = parseInt(visits) + 1;
+    }
+    setCookie("counter", visits, now)
+    // document.write("您是到访的第" + visits + "位用户！")
+    var visitCountElement = document.getElementById("busuanzi_value_site_uv");
+    visitCountElement.innerHTML = "本站访客人数 " + visits + " 人";
+  </script>
 
   <script>(function () { var e = document.body.parentElement, t = [], n = null, i = document.body.classList.contains("typora-export-collapse-outline"), r = function (e, t, n) { document.addEventListener(e, function (e) { if (!e.defaultPrevented) for (var i = e.target; i && i != this; i = i.parentNode)if (i.matches(t)) { !1 === n.call(i, e) && (e.preventDefault(), e.stopPropagation()); break } }, !1) }; function o() { return e.scrollTop } r("click", ".outline-expander", function (e) { var t = this.closest(".outline-item-wrapper").classList; return t.contains("outline-item-open") ? t.remove("outline-item-open") : t.add("outline-item-open"), d(), !1 }), r("click", ".outline-item", function (e) { var t = this.querySelector(".outline-label"); if (location.hash = "#" + t.getAttribute("href"), i) { var n = this.closest(".outline-item-wrapper").classList; n.contains("outline-item-open") || n.add("outline-item-open"), c(), n.add("outline-item-active") } }); var a, s, l = function () { var e = o(); n = null; for (var i = 0; i < t.length && t[i][1] - e < 60; i++)n = t[i] }, c = function () { document.querySelectorAll(".outline-item-active").forEach(e => e.classList.remove("outline-item-active")), document.querySelectorAll(".outline-item-single.outline-item-open").forEach(e => e.classList.remove("outline-item-open")) }, d = function () { if (n) { c(); var e = document.querySelector('.outline-label[href="#' + (CSS.escape ? CSS.escape(n[0]) : n[0]) + '"]'); if (e) if (i) { var t = e.closest(".outline-item-open>ul>.outline-item-wrapper"); if (t) t.classList.add("outline-item-active"); else { for (var r = (e = e.closest(".outline-item-wrapper")).parentElement.closest(".outline-item-wrapper"); r;)r = (e = r).parentElement.closest(".outline-item-wrapper"); e.classList.add("outline-item-active") } } else e.closest(".outline-item-wrapper").classList.add("outline-item-active") } }; window.addEventListener("scroll", function (e) { a && clearTimeout(a), a = setTimeout(function () { l(), d() }, 300) }); var u = function () { s = setTimeout(function () { !function () { t = []; var e = o(); document.querySelector("#write").querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(n => { var i = n.getAttribute("id"); t.push([i, e + n.getBoundingClientRect().y]) }) }(), l(), d() }, 300) }; window.addEventListener("resize", function (e) { s && clearTimeout(s), u() }), u() })();</script>
 </body>
