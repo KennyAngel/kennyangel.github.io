@@ -1,0 +1,81 @@
+
+.right_top_fixed {
+    height: 300px;
+    width: 100%;
+    display: inline-flex;
+    position: fixed;
+    z-index: 997;
+}
+
+
+/* 定义整个播放器的样式 */
+.player {
+    width: 20%;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    text-align: right;
+}
+.player audio {
+    background-color: rgba(238, 238, 238, 0.1);
+    lighting-color: aliceblue;
+}
+
+
+/* 定义封面的样式 */
+.player .cover {
+    display: flex; /* 内部元素呈现为块级元素 */
+    height: 250px; /* 高度为250px */
+    width: 250px; /* 宽度为250px */
+    margin-left: 30px; /* 距离左侧30px */
+    margin-top: 30px; /* 距离上方30px */
+    overflow: hidden; /* 溢出部分隐藏 */
+    border-radius: 10px; /* 边框半径为10px */
+}
+
+/* 定义歌曲信息的样式 */
+.song {
+    /* position: absolute;  */
+    margin-left: 50px; /* 距离左侧50px */
+    margin-top: 20px; /* 距离上方20px */
+    left: 250px; /* 左侧距离为250px */
+    top: 150px; /* 上方距离为150px */
+    height: 250px; /* 高度为250px */
+    width: 400px; /* 宽度为400px */
+    overflow: auto; /* 溢出部分自动滚动 */
+}
+ 
+/* 隐藏滚动条 */
+div::-webkit-scrollbar {
+    display: none;
+}
+ 
+/* 定义p标签的字体样式 */
+.song p {
+    font-family: "楷体";
+    margin: 5px; /* 上下左右各留出5px的间距 */
+}
+ 
+/* 定义h2标签的字体样式 */
+.song h2 {
+    font-family: "楷体";
+}
+ 
+/* 设置音频样式 */
+audio {
+    width: 100%; /* 宽度为100% */
+    height: 50px; /* 高度为50px */
+    border-radius: 10px; /* 边框半径为10px */
+}
+ 
+/* 设置音频播放进度条的颜色 */
+audio::-webkit-media-controls-progress-bar {
+    background-color: #000;
+}
+ 
+
+ 
+/* 隐藏音频播放器的背景颜色 */
+audio::-webkit-media-controls-enclosure {
+    background-color: rgba(216, 218, 221, 0.0);
+}

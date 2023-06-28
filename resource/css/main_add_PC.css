@@ -46,8 +46,8 @@
     justify-content: right;
 }
 
-/* header区域布局 */
-#header {
+/* article区域布局 */
+#article {
     width: 50%; 
     background-color: #272729;
     margin-left: 25%;

@@ -12,28 +12,40 @@
   <link rel="stylesheet" type="text/css" href="resource/css/main_add_PC.css" media="screen and (min-width:601px)" />
   <link rel="stylesheet" type="text/css" href="resource/css/main_add_M.css" media="screen and (max-width:600px)" />
 
+  <link rel="stylesheet" type="text/css" href="resource/css/music_player2.css">
+
 </head>
 
 <body>
 
   <!-- 横向导航栏 -->
-  <nav class="navigation">
-    <div class="nav_dock_left content_left_center" id="ID_nav_left">
-      <p><img src="resource\img\kenny_5.ico" referrerpolicy="no-referrer" height="80px"></p>
-      <a class="nav_link" href="#page-top" id="ID_nav_name">Kenny_ANGEL'S BLOG</a>
+  <div id="header" width="100%">
+    <nav class="navigation">
+      <div class="nav_dock_left content_left_center" id="ID_nav_left">
+        <p><img src="resource\img\kenny_5.ico" referrerpolicy="no-referrer" height="80px"></p>
+        <a class="nav_link" href="#page-top" id="ID_nav_name">Kenny_ANGEL'S BLOG</a>
+      </div>
+      <div class="nav_dock_right content_right_center">
+        <a class="nav_link" href=".\index.html">Home</a>
+        <a class="nav_link" href=".\about.html">About</a>
+        <a class="nav_link" href=".\contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="right_top_fixed">
+    <div style="width: 80%;">
     </div>
-    <div class="nav_dock_right content_right_center">
-      <a class="nav_link" href=".\index.html">Home</a>
-      <a class="nav_link" href=".\about.html">About</a>
-      <a class="nav_link" href=".\contact.html">Contact</a>
+    <div class="player">
+      <img src="resource/music/cover.jpg" alt="" width="50rem">
+      <audio src="resource/music/26 - Hollow Knight.mp3" controls loop></audio>
     </div>
-  </nav>
+  </div>
 
   <!-- 页面主体 -->
-  <div id="header" class='megamenu-content'>
+  <div id="article" class='megamenu-content'>
     <div id='write' class='megamenu-content' style="width: 100%;">
       <h1 style="color:Bisque ">Kenny_Angel's Blog</h1>
-      <!-- <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">计数功能</script> -->
       <h3><span>Hi there 👋 欢迎来到我的个人页面✨</span></h3>
       <p><span>· 🏄‍♂️ 当前站点: </span><a href='https://kennyangel.github.io/' target='_blank'
           class='url'>https://kennyangel.github.io/</a></p>
