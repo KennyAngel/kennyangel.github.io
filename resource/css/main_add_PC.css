@@ -1,0 +1,70 @@
+
+:root {
+    --nav_height:100px;
+}
+
+/* 导航栏样式表 */
+.navigation {
+    width: 100%;
+    height: var(--nav_height);
+    background-color:#191D24;
+    position: fixed;
+    z-index:999;
+}
+
+.nav_dock_left {
+    float: left;
+    width: 40%;
+    height: var(--nav_height);
+}
+
+.nav_dock_right{
+    float: right;
+    width: 60%;
+    height: var(--nav_height);
+}
+
+.nav_link {
+    color:cornsilk;
+    font-size:x-large;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#ID_nav_name {
+    display: flex;
+}
+
+.content_left_center{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.content_right_center{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+/* header区域布局 */
+#header {
+    width: 50%; 
+    background-color: #272729;
+    margin-left: 25%;
+    padding-top: 100px;
+}
+
+/* 地脚信息栏样式 */
+.foot {
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    height: calc(var(--nav_height) * 0.75);
+    background-color:#191D24;
+    align-items: center;
+}
+
+.foot p {
+    text-align: center;
+}
